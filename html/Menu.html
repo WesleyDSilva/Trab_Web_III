@@ -100,8 +100,8 @@
 
     <div class="Menu-box">
 
-        <button class="btn btn-pizzas" onclick="document.location='MenuPizza.html'" type="button">Pizzas</button>
-        <button class="btn btn-lanches" onclick="document.location='MenuLanche.html'" type="button">Lanches</button>
+        <button class="btn btn-pizzas" onclick="chamaMenuPizza()" type="button">Pizzas</button>
+        <button class="btn btn-lanches" onclick="chamaMenuLanche()" type="button">Lanches</button>
         <button class="btn btn-sobremesas" onclick="document.location='MenuSobremesa.html'" type="button">Sobremesas</button>
         <button class="btn btn-bebidas" onclick="document.location='MenuBebida.html'" type="button">Bebidas</button>
 
@@ -156,7 +156,17 @@
         </div>
 
     </footer>
+    <script>
+        function chamaMenuPizza() {
+            // Redireciona para a página CadastroCli.html
+            window.location.href = 'MenuPizza.html';
+        }
 
+        function chamaMenuPizza() {
+            // Redireciona para a página CadastroCli.html
+            window.location.href = 'MenuLanche.html';
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
