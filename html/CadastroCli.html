@@ -109,14 +109,14 @@
                 aria-label="Bairro" required><br><br>
             <input id="complemento" class="form-control mr-sm-2 inputForms placeholder" type="text"
                 placeholder="Complemento" aria-label="Complemento"><br><br>
-            <input id="senha" class="form-control mr-sm-2 inputForms placeholder" type="text" placeholder="password"
+            <input id="senha" class="form-control mr-sm-2 inputForms placeholder" type="password" placeholder="Senha"
                 aria-label="Senha" required><br><br>
             <input id="confirmSenha" class="form-control mr-sm-2 inputForms placeholder" type="password"
                 placeholder="Confirmar senha" aria-label="Confirmar Senha" required></p><br>
 
             <div class="form-inline my-2 my-lg-0 d-flex justify-content-center">
                 <button class="btnConfirm" onclick="confirmaCadastro()">Enviar</button>
-            </div> 
+            </div>
         </div> 
     </form> 
 
@@ -234,6 +234,7 @@
                     console.log("4.1.1");
                     console.log(response);
                     alert('Dados enviados com sucesso.');
+                    window.location.href = "index.html";
                 },
                 error: function (error) {
 
