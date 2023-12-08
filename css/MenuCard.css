@@ -24,24 +24,25 @@ body {
 
 .card-img-top{
     max-width: 150px;
-    max-height: 150px;
+    max-height: 200px;
     padding-top: 10px;
     border-radius: 15px;
 }
 
 .card-text{
     font-size: 10px;
-    
+    width: 140px;    
 }
 
 .card-title{
     text-transform: uppercase;
     margin: 0px;
+    width: 140px;
 }
 
 .card-body{
-    max-width: 140px;
-    max-height: 150px;
+    max-width: 150px;
+    max-height: 170px;
 }
 
 .buttonRadio{
