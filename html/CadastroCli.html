@@ -177,7 +177,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
+    <script src="../js/BuscaCep.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         
         <script src="../js/BuscaCep.js"></script>
 
@@ -186,6 +187,8 @@
 <script>
 
     function confirmaCadastro() {
+
+        event.preventDefault();
 
         console.log("1");
         var nome = $('#nome').val();
@@ -203,15 +206,15 @@
         console.log("2");
 
         var dados = {
-            name: nome,
+            nome: nome,
             cpf: cpf,
             email: email,
             telefone: telefone,
             cep: cep,
             logra: logra,
             numeroCasa: numeroCasa,
-            bairro: bairro,
             cidade: cidade,
+            bairro: bairro,
             complemento: complemento,
             senha: senha
         };

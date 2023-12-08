@@ -31,10 +31,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             die('Falha na conexão com o banco'. $conexao->connect_error);
         }
 
-        $sql = "INSERT INTO CLIENTE (NOME_CLI, CPF_CLI, EMAIL_CLI, TELEFONE_CLI, CEP_CLI, LOGRADOURO_CLI, NUMERO_CADA_CLI, CIDADE_CLI, BAIRRO_CLI, COMPLEMENTO_CLI, SENHA_CLI) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO CLIENTE (NOME_CLI, CPF_CLI, EMAIL_CLI, TELEFONE_CLI, CEP_CLI, LOGRADOURO_CLI, NUMERO_CASA_CLI, CIDADE_CLI, BAIRRO_CLI, COMPLEMENTO_CLI, SENHA_CLI) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $conexao->prepare($sql);
 
-        $stmt->bind_param("ssSSSSSSSSS", $data['nome'], $data['cpf'], $data['email'], $data['telefone'], $data['cep'], $data['logra'], $data['numeroCasa'], $data['cidade'], $data['bairro'], $data['complemento'], $data['senha']);
+        $stmt->bind_param("sssssssssss", $data['nome'], $data['cpf'], $data['email'], $data['telefone'], $data['cep'], $data['logra'], $data['numeroCasa'], $data['cidade'], $data['bairro'], $data['complemento'], $data['senha']);
 
         if($stmt->execute()){
 
@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $complemento = isset($data['complemento']) ? $data['complemento'] : '';
         $senha = isset($data['senha']) ? $data['senha'] : '';
 
-        echo json_encode(['erro' => 'Dados inválidos - Nome: ' . $nome . ', CPF: ' . $cpf . ', Email: ' . $email . ', Telefone: ' . $telefone . ', CEP: ' . $cep . ', Logradouro: ' . $logra . ', Numero Casa: ' . $numeroCasa . ', Cidade: ' . $cidade . ', Bairro: ' . $bairro . ', Complemento: ' . $complemento . ', Senha: ' . $senha]);
+        echo json_encode(['erro' => 'Dados invalidos - Nome: ' . $nome . ', CPF: ' . $cpf . ', Email: ' . $email . ', Telefone: ' . $telefone . ', CEP: ' . $cep . ', Logradouro: ' . $logra . ', Numero Casa: ' . $numeroCasa . ', Cidade: ' . $cidade . ', Bairro: ' . $bairro . ', Complemento: ' . $complemento . ', Senha: ' . $senha]);
         
     }
 
