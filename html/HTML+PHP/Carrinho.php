@@ -1,11 +1,5 @@
 <?php
-    session_start();
-
-    if (!isset($_SESSION["autenticado"]) || !$_SESSION["autenticado"]) {
-        header("Location: login.php");
-        exit();
-    }
-    $_SESSION['InfoAleatoria'] = 'abcdef';
+include('protect.php');
 ?>
 
 <?php include 'Template_Header_User.php'; ?>

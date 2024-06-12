@@ -83,81 +83,126 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row justify-content-around">
-             <div class="card col-md-3">
-                 <img class="card-img-top text-center mx-auto" src="img/meat.png" alt="Card image cap">
-                 <div class="card-body">
-                     <h5 class="card-title">Sanduiche</h5>
-                     <p class="card-text">Sanduiche de carne</p>
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
-                 </div>
-             </div>
-
-             <div class="card col-md-3">
-                 <img class="card-img-top text-center mx-auto" src="img/churros.png" alt="Card image cap">
-                 <div class="card-body">
-                     <h5 class="card-title">Churros</h5>
-                     <p class="card-text">Doce de leite</p>
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
-                 </div>
-             </div>
-
-             <div class="card col-md-3">
-                 <img class="card-img-top text-center mx-auto" src="img/chicken.png" alt="Card image cap">
-                 <div class="card-body">
-                     <h5 class="card-title">Sanduiche</h5>
-                     <p class="card-text">Sanduiche de frango</p>
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
-                 </div>
-             </div>
-
-             <div class="card col-md-3">
-                 <img class="card-img-top text-center mx-auto" src="img/steak.png" alt="Card image cap">
-                 <div class="card-body">
-                     <h5 class="card-title">Sanduiche</h5>
-                     <p class="card-text">Sanduiche de carne de porco</p>
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
-                 </div>
-             </div>               
-         </div>
-
-         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Detalhes do pedido</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class=" container row justify-content-around">
-                       <div class="input-group mb-3">
-                           <label class="input-group-text" for="inputGroupSelect01">Quantidade</label>
-                           <select class="form-select" id="inputGroupSelect01">
-                             <option selected>Escolha</option>
-                             <option value="1">1</option>
-                             <option value="2">2</option>
-                             <option value="3">3</option>
-                           </select>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-around">
+                        <div class="card col-md-3">
+                            <img class="card-img-top text-center mx-auto" src="img/meat.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Sanduiche</h5>
+                                <p class="card-text">Sanduiche de carne</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
+                            </div>
                         </div>
-   
+
+                        <div class="card col-md-3">
+                            <img class="card-img-top text-center mx-auto" src="img/churros.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Churros</h5>
+                                <p class="card-text">Doce de leite</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
+                            </div>
+                        </div>
+
+                        <div class="card col-md-3">
+                            <img class="card-img-top text-center mx-auto" src="img/chicken.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Sanduiche</h5>
+                                <p class="card-text">Sanduiche de frango</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
+                            </div>
+                        </div>
+
+                        <div class="card col-md-3">
+                            <img class="card-img-top text-center mx-auto" src="img/steak.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Sanduiche</h5>
+                                <p class="card-text">Sanduiche de carne de porco</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Peça agora</a>                    
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-around">
+                        <!-- Segundo conjunto de cards -->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                         
-                    </div>
-                    <div class="form-group">
-                      <label for="message-text" class="col-form-label">Observação:</label>
-                      <textarea class="form-control mw-100" id="message-text"></textarea>
-                    </div>
-                  </form>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                  <button type="button" class="btn btn-primary">Enviar pedido</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Detalhes do pedido</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <form>
+                                <div class=" container row justify-content-around">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Quantidade</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Escolha</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    </div>
+            
+                                    
+                                </div>
+                                <div class="form-group">
+                                <label for="message-text" class="col-form-label">Observação:</label>
+                                <textarea class="form-control mw-100" id="message-text"></textarea>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Enviar pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
         <footer style="margin-top: 300px">
 
